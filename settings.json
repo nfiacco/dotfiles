@@ -1,0 +1,176 @@
+{
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 100,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.quickSuggestions": {
+      "other": true,
+      "strings": true
+    },
+    "editor.colorDecorators": true,
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_",
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2,
+    "editor.indentSize": "tabSize",
+    "editor.inlineSuggest.enabled": true,
+    "explorer.autoReveal": false,
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.focusRecentEditorAfterClose": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "search.exclude": {
+      "**/.next": true,
+      "**/build": true,
+      "package-lock.json": true
+    },
+    "files.exclude": {
+      "**/.next": true,
+      "**/node_modules": true
+    },
+    "[typescript]": {
+      "editor.tabSize": 2,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+      "editor.tabSize": 2,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[python]": {
+      "editor.codeActionsOnSave": {
+        "source.unusedImports": "explicit"
+      },
+      "editor.tabSize": 2,
+      "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "javascript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "javascript.format.semicolons": "insert",
+    "typescript.format.semicolons": "insert",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.preferences.quoteStyle": "double",
+    "javascript.preferences.quoteStyle": "double",
+    "eslint.nodeEnv": "development",
+    "tailwindCSS.includeLanguages": {
+      "html": "html",
+      "javascript": "javascript",
+      "css": "css"
+    },
+    "tailwindCSS.experimental.classRegex": [
+      ["classNames\\(([^)]*)\\)", "'([^']*)'"]
+    ],
+    "tailwindCSS.classAttributes": ["class", "className", "ngClass", ".*Style*"],
+    "[go]": {
+      "editor.insertSpaces": false,
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+      },
+      "editor.suggest.snippetsPreventQuickSuggestions": false
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "go.editorContextMenuCommands": {
+      "toggleTestFile": true,
+      "addTags": true,
+      "removeTags": false,
+      "fillStruct": true,
+      "testAtCursor": true,
+      "testFile": false,
+      "testPackage": false,
+      "generateTestForFunction": true,
+      "generateTestForFile": false,
+      "generateTestForPackage": false,
+      "addImport": true,
+      "testCoverage": true,
+      "playground": true,
+      "debugTestAtCursor": true,
+      "benchmarkAtCursor": false
+    },
+    "gitlens.menus": {
+      "editor": {
+        "blame": false,
+        "clipboard": true,
+        "compare": true,
+        "history": false,
+        "remote": false
+      },
+      "editorGroup": {
+        "blame": true,
+        "compare": true
+      },
+      "editorTab": {
+        "clipboard": true,
+        "compare": true,
+        "history": true,
+        "remote": true
+      },
+      "explorer": {
+        "clipboard": true,
+        "compare": true,
+        "history": true,
+        "remote": true
+      },
+      "ghpr": {
+        "worktree": true
+      },
+      "scm": {
+        "graph": true
+      },
+      "scmRepositoryInline": {
+        "graph": true
+      },
+      "scmRepository": {
+        "authors": true,
+        "generateCommitMessage": true,
+        "graph": false
+      },
+      "scmGroupInline": {
+        "stash": true
+      },
+      "scmGroup": {
+        "compare": true,
+        "openClose": true,
+        "stash": true
+      },
+      "scmItemInline": {},
+      "scmItem": {
+        "clipboard": true,
+        "compare": true,
+        "history": true,
+        "remote": false,
+        "stash": true
+      }
+    },
+    "editor.unicodeHighlight.allowedCharacters": {
+      "‎": true
+    },
+    "window.commandCenter": false,
+    "editor.accessibilitySupport": "off",
+    "typescript.preferences.autoImportFileExcludePatterns": [
+      "**/.next",
+      "next/dist/**",
+      "**/postcss",
+      "**/react-day-picker"
+    ],
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "github.copilot.enable": {
+      "*": true,
+      "plaintext": false,
+      "markdown": false,
+      "scminput": false
+    },
+    "python.analysis.autoImportCompletions": true,
+    "editor.scrollBeyondLastLine": true
+  }
+  

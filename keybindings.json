@@ -1,0 +1,61 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+      "key": "shift shift",
+      "command": "workbench.action.quickOpen"
+    },
+    {
+      "key": "cmd+[",
+      "command": "workbench.action.navigateBack"
+    },
+    {
+      "key": "cmd+]",
+      "command": "workbench.action.navigateForward"
+    },
+    {
+      "key": "cmd+r",
+      "command": "editor.action.startFindReplaceAction"
+    },
+    {
+      "key": "cmd+shift+r",
+      "command": "workbench.action.replaceInFiles"
+    },
+    {
+      "key": "alt+enter",
+      "command": "editor.action.quickFix",
+      "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+      "key": "cmd+.",
+      "command": "-editor.action.quickFix",
+      "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+      "key": "alt+tab",
+      "command": "workbench.action.quickSwitchWindow"
+    },
+    {
+      "key": "cmd+d",
+      "command": "duplicate.execute"
+    },
+    {
+      "key": "cmd+right",
+      "command": "-editor.action.inlineSuggest.acceptNextWord",
+      "when": "inlineSuggestionVisible && !editorReadonly"
+    },
+    {
+      "key": "cmd+enter",
+      "command": "search.action.replaceAll",
+      "when": "replaceActive && searchViewletVisible && !findWidgetVisible"
+    },
+    {
+      "key": "alt+cmd+enter",
+      "command": "-search.action.replaceAll",
+      "when": "replaceActive && searchViewletVisible && !findWidgetVisible"
+    },
+    {
+      "key": "cmd+\\",
+      "command": "github.copilot.interactiveEditor.generate"
+    }
+  ]
+  
