@@ -1,61 +1,117 @@
 // Place your key bindings in this file to override the defaults
 [
-    {
-      "key": "shift shift",
-      "command": "workbench.action.quickOpen"
-    },
-    {
-      "key": "cmd+[",
-      "command": "workbench.action.navigateBack"
-    },
-    {
-      "key": "cmd+]",
-      "command": "workbench.action.navigateForward"
-    },
-    {
-      "key": "cmd+r",
-      "command": "editor.action.startFindReplaceAction"
-    },
-    {
-      "key": "cmd+shift+r",
-      "command": "workbench.action.replaceInFiles"
-    },
-    {
-      "key": "alt+enter",
-      "command": "editor.action.quickFix",
-      "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-    },
-    {
-      "key": "cmd+.",
-      "command": "-editor.action.quickFix",
-      "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-    },
-    {
-      "key": "alt+tab",
-      "command": "workbench.action.quickSwitchWindow"
-    },
-    {
-      "key": "cmd+d",
-      "command": "duplicate.execute"
-    },
-    {
-      "key": "cmd+right",
-      "command": "-editor.action.inlineSuggest.acceptNextWord",
-      "when": "inlineSuggestionVisible && !editorReadonly"
-    },
-    {
-      "key": "cmd+enter",
-      "command": "search.action.replaceAll",
-      "when": "replaceActive && searchViewletVisible && !findWidgetVisible"
-    },
-    {
-      "key": "alt+cmd+enter",
-      "command": "-search.action.replaceAll",
-      "when": "replaceActive && searchViewletVisible && !findWidgetVisible"
-    },
-    {
-      "key": "cmd+\\",
-      "command": "github.copilot.interactiveEditor.generate"
-    }
-  ]
-  
+  {
+    "key": "shift shift",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "cmd+[",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "cmd+]",
+    "command": "workbench.action.navigateForward"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "-workbench.action.navigateBack",
+    "when": "canNavigateBack"
+  },
+  {
+    "key": "ctrl+shift+-",
+    "command": "-workbench.action.navigateForward",
+    "when": "canNavigateForward"
+  },
+  {
+    "key": "cmd+r",
+    "command": "editor.action.startFindReplaceAction"
+  },
+  {
+    "key": "cmd+shift+r",
+    "command": "workbench.action.replaceInFiles"
+  },
+  {
+    "key": "alt+enter",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+.",
+    "command": "-editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+tab",
+    "command": "workbench.action.quickSwitchWindow"
+  },
+  {
+    "key": "cmd+d",
+    "command": "duplicate.execute"
+  },
+  {
+    "key": "cmd+enter",
+    "command": "search.action.replaceAll",
+    "when": "replaceActive && searchViewletVisible && !findWidgetVisible"
+  },
+  {
+    "key": "alt+cmd+enter",
+    "command": "-search.action.replaceAll",
+    "when": "replaceActive && searchViewletVisible && !findWidgetVisible"
+  },
+  {
+    "key": "cmd+\\",
+    "command": "github.copilot.interactiveEditor.generate"
+  },
+  {
+    "key": "cmd+r",
+    "command": "editor.action.startFindReplaceAction",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "key": "alt+cmd+f",
+    "command": "-editor.action.startFindReplaceAction",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "key": "shift+cmd+,",
+    "command": "workbench.action.openSettingsJson"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-github.copilot.generate",
+    "when": "editorTextFocus && github.copilot.activated && !commentEditorFocused && !inInteractiveInput && !interactiveEditorFocused"
+  },
+  {
+    "key": "cmd+l",
+    "command": "-expandLineSelection",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+l",
+    "command": "workbench.panel.chat.view.copilot.focus"
+  },
+  {
+    "key": "alt+cmd+b",
+    "command": "-workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "cmd+l",
+    "command": "workbench.action.closeAuxiliaryBar",
+    "when": "activeAuxiliary == 'workbench.panel.chatSidebar'"
+  },
+  {
+    "key": "escape",
+    "command": "workbench.action.closeAuxiliaryBar",
+    "when": "activeAuxiliary == 'workbench.panel.chatSidebar'"
+  },
+  {
+    "key": "shift+tab",
+    "command": "editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || cursorAtInlineEdit && inlineEditIsVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || cursorAtInlineEdit && inlineEditIsVisible && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+  },
+  {
+    "key": "shift+tab",
+    "command": "editor.action.inlineEdit.accept",
+    "when": "cursorAtInlineEdit && inlineEditVisible && !editorReadonly"
+  }
+]
